@@ -17,6 +17,11 @@ public class TestController {
     public String hello() {
         String businessHello = businessFeign.hello();
         LOG.info("feign调用business方法:------"+businessHello);
-        return "Hello World!";
+        return "Hello World22!";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login22";
     }
 }
