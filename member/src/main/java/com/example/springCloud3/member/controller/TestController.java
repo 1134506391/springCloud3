@@ -31,7 +31,7 @@ public class TestController {
     @GetMapping("/hello")
     public String hello() {
         String businessHello = businessFeign.hello();
-        LOG.info("feign调用business方法:------"+businessHello);
+        LOG.info("feign调用business方法1:------"+businessHello);
 //        return "Hello World22!";
         return String.format("Hello %s!", testNacos);
     }
